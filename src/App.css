@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Lato&family=Lobster&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+
 .App {
   text-align: center;
+  font-family: aldrich;
 }
 
 .App-logo {
@@ -35,4 +38,80 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background-color: #d6892c;
+color: #fff;
+font: aldrich;
+-webkit-font-smoothing: antialiased;
+}
+
+.card {
+/*
+-webkit-animation: cardEnter 0.75s ease-in-out 0.5s;
+animation: cardEnter 0.75s ease-in-out 0.5s;
+-webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+*/
+max-width: 400px;
+padding: 20px;
+background-color: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+margin: 20px auto;
+opacity: 1;
+color: #000;
+  line-height: 49px;
+
+
+}
+
+/* Radio buttons */
+input[type="radio"] {
+font-size: 60px;
+margin: 5px;
+}
+
+::placeholder, input[type=text]{
+  font-family: aldrich;
+  font-size: 10px;
+}
+
+.sName{
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.feedback-button {
+display: inline-block;
+
+cursor: pointer;
+margin: 0 2% 0 0;
+padding: 12px 22px;
+border: none;
+font-family: aldrich; 
+color: #ecf0f1;
+background: red;
+}
+
+.feedback-button:hover{
+  background-color: #ff5350;
+}
+
+
+
+.feedback-button:active {
+top: 5px;
+background: -webkit-linear-gradient(-90deg, #ff8583 0, #ff5350 100%);
+background: -moz-linear-gradient(180deg, #ff8583 0, #ff5350 100%);
+background: linear-gradient(180deg, #ff8583 0, #ff5350 100%);
+background-position: 50% 50%;
+-webkit-background-origin: padding-box;
+background-origin: padding-box;
+-webkit-background-clip: border-box;
+background-clip: border-box;
+-webkit-background-size: auto auto;
+background-size: auto auto;
+-webkit-box-shadow: 0 5px 0 0 rgba(178,49,49,1) ;
+box-shadow: 0 5px 0 0 rgba(178,49,49,1) ;
 }
