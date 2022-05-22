@@ -22,15 +22,7 @@ class TravelSurvey extends Component {
         else if(e.target.name === 'ans2'){
             answers.ans2 = e.target.value;
         }
-        else if(e.target.name === 'ans3'){
-            answers.ans3 = e.target.value;
-        }
-        else if(e.target.name === 'ans4'){
-            answers.ans4 = e.target.value;
-        }
-        else if(e.target.name === 'ans5'){
-            answers.ans5 = e.target.value;
-        }
+
 
         this.setState({answers:answers}, function(){
             console.log(this.state)
@@ -70,7 +62,7 @@ class TravelSurvey extends Component {
         }
         else if(this.state.travellerName !== '' && this.state.isSubmitted === false){
             name = <div>
-                <h1>Welcome, {this.state.travellerName} to our survey</h1>
+                <h1>Welcome {this.state.travellerName} to our survey</h1>
             </div>
             questions = <div>
                 <h2>Here are some Questions</h2>
@@ -80,17 +72,15 @@ class TravelSurvey extends Component {
                         <label>What type of holiday are you looking for?</label><br/>
                         <input type="radio" name="ans1" value="City" onChange={this.answerSelected}/> City
                         <input type="radio" name="ans1" value="Beach" onChange={this.answerSelected}/> Beach
-                        <input type="radio" name="ans1" value="Lakes/Mountains" onChange={this.answerSelected}/> Lakes/Mountains
-                        <input type="radio" name="ans1" value="Cruise" onChange={this.answerSelected}/> Cruise
                     </div>
 
                     <div className="card">
                         <label>Which continent would you like to visit?</label><br/>
                         <input type="radio" name="ans2" value="Europe" onChange={this.answerSelected}/> Europe
-                        <input type="radio" name="ans2" value="North America" onChange={this.answerSelected}/>America
-                        <input type="radio" name="ans2" value="Africa" onChange={this.answerSelected}/> Africa
                         <input type="radio" name="ans2" value="Asia" onChange={this.answerSelected}/> Asia
-                        <input type="radio" name="ans2" value="Oceania" onChange={this.answerSelected}/> Oceania
+                        <input type="radio" name="ans2" value="Africa" onChange={this.answerSelected}/> Africa
+                        <input type="radio" name="ans2" value="North America" onChange={this.answerSelected}/>North America
+                        <input type="radio" name="ans2" value="South America" onChange={this.answerSelected}/>South America
                     </div>
 
                     {/* <div className="card">

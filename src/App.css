@@ -48,28 +48,34 @@ font: aldrich;
 }
 
 .card {
-/*
--webkit-animation: cardEnter 0.75s ease-in-out 0.5s;
-animation: cardEnter 0.75s ease-in-out 0.5s;
--webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-*/
+
 max-width: 400px;
 padding: 20px;
-background-color: #fff;
+background-color: rgb(252, 252, 252);
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 margin: 20px auto;
 opacity: 1;
 color: #000;
-  line-height: 49px;
+line-height: 49px;
+border: 1px solid grey;
+}
 
-
+.card label{
+  font-weight: bold;
 }
 
 /* Radio buttons */
+
 input[type="radio"] {
-font-size: 60px;
-margin: 5px;
+  position: relative;
+  top: 30px;
+  margin: -5px;
+} 
+
+.card input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ::placeholder, input[type=text]{
